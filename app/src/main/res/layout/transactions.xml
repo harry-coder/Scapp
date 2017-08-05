@@ -1,0 +1,33 @@
+<!--
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    ??? transaction form..........
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Tabs_Category.onBoarding">
+
+    <include layout="@layout/tablayout"
+        android:id="@+id/transaction_tool"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/trasaction_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/transaction_tool"
+        >
+
+
+    </android.support.v4.view.ViewPager>
+
+
+</RelativeLayout>
+<!--
+</ScrollView>-->

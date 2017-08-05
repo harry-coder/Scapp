@@ -1,0 +1,184 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="7dp"
+
+            app:cardUseCompatPadding="true"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputonp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/textvendor"
+                    android:layout_marginStart="120dp">
+
+                    <EditText
+                        android:id="@+id/text_onp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned"
+
+                        android:visibility="invisible" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <TextView
+                    android:id="@+id/textvendor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="18dp"
+                    android:text="Vendor Deals in"
+                    android:textColor="#075e54"
+                    android:textSize="20sp" />
+
+                <ToggleButton
+                    android:id="@+id/toggle_onp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/inputonp"
+                    android:layout_alignStart="@+id/textvendor"
+                    android:layout_marginStart="11dp"
+                    android:background="@drawable/toggle_state"
+                    android:textColor="#ffffff"
+
+                    android:textOff="ONP"
+                    android:textOn="ONP"
+                    android:textSize="18sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputplastic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/inputonp"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/text_plastic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned"
+
+                        android:visibility="invisible" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ToggleButton
+                    android:id="@+id/toggle_plastic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/toggle_state"
+                    android:textColor="#ffffff"
+
+                    android:textOff="plastic"
+                    android:textOn="plastic"
+                    android:textSize="18sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignStart="@+id/toggle_onp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputiron"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/inputplastic"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/text_iron"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned"
+
+                        android:visibility="invisible" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ToggleButton
+                    android:id="@+id/toggle_iron"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/toggle_state"
+                    android:textColor="#ffffff"
+
+                    android:textOff="iron"
+                    android:textOn="iron"
+                    android:textSize="18sp"
+                    android:layout_alignBottom="@+id/inputiron"
+                    android:layout_alignStart="@+id/toggle_onp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inputrecord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/inputiron"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="5dp">
+
+                    <EditText
+                        android:id="@+id/text_record"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned"
+
+                        android:layout_marginBottom="5dp"
+                        android:visibility="invisible" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ToggleButton
+                    android:id="@+id/toggle_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/toggle_state"
+
+
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#ffffff"
+                    android:textOff="Record"
+                    android:textOn="Record"
+                    android:textSize="18sp"
+                    android:layout_alignBottom="@+id/inputrecord"
+                    android:layout_alignStart="@+id/toggle_iron" />
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <include layout="@layout/okhlee_deal"/>
+    </LinearLayout>
+</ScrollView>

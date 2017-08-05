@@ -1,0 +1,128 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+
+        app:cardUseCompatPadding="true"
+        android:layout_weight="0.03">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.rey.material.widget.CheckBox
+                style="@style/Material.Drawable.CheckBox"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="ONP"
+                android:textSize="15dp"
+                android:layout_marginTop="22dp"
+                android:id="@+id/onpcheckBox"
+
+                android:layout_below="@+id/textView3"
+                android:layout_alignEnd="@+id/textView3" />
+
+
+            <com.rey.material.widget.CheckBox
+                style="@style/Material.Drawable.CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plastic"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/plasticcheckBox"
+                android:layout_below="@+id/onpcheckBox"
+                android:layout_alignStart="@+id/onpcheckBox"
+                android:layout_alignEnd="@+id/onpcheckBox" />
+
+            <com.rey.material.widget.CheckBox
+                style="@style/Material.Drawable.CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Glass"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/glasscheckBox"
+                android:layout_below="@+id/recordcheckBox"
+                android:layout_alignStart="@+id/recordcheckBox"
+                android:layout_alignEnd="@+id/recordcheckBox" />
+
+            <com.rey.material.widget.CheckBox
+                style="@style/Material.Drawable.CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Record"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/recordcheckBox"
+                android:layout_below="@+id/plasticcheckBox"
+                android:layout_alignStart="@+id/plasticcheckBox"
+                android:layout_alignEnd="@+id/plasticcheckBox" />
+
+
+            <com.rey.material.widget.CheckBox
+                style="@style/Material.Drawable.CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iron"
+                android:textSize="15dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/ironcheckBox"
+                android:layout_below="@+id/glasscheckBox"
+                android:layout_alignStart="@+id/glasscheckBox"
+                android:layout_alignEnd="@+id/glasscheckBox" />
+
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="18dp"
+                android:text="Okhlee Deals in"
+                android:textColor="#075e54"
+                android:textSize="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+
+            <Button
+                android:id="@+id/submit3"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_background"
+                android:padding="10dp"
+                android:text="Submit"
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/ironcheckBox"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22dp" />
+            <com.wang.avi.AVLoadingIndicatorView
+                android:layout_width="wrap_content"
+                android:id="@+id/avl3"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                style="@style/AVLoadingIndicatorView.Large"
+                app:indicatorName="BallClipRotateIndicator"
+                app:indicatorColor="@android:color/holo_green_light"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="7dp"
+
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/usernameWrapper1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:layout_below="@+id/textView21"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="40dp">
+
+                <EditText
+                    android:id="@+id/accountNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned"
+                    android:hint="Accounr Number"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/usernickname12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:layout_below="@+id/usernameWrapper1"
+                android:layout_alignStart="@+id/usernameWrapper1"
+                android:layout_alignEnd="@+id/usernameWrapper1">
+
+                <EditText
+                    android:id="@+id/ifsc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/usernickname1"
+                    android:layout_below="@+id/usernickname1"
+                    android:hint="IFS code"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="29dp"
+                android:text="Other Details"
+                android:textSize="20sp"
+                android:textColor="#075e54"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="19dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/usernickname123"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="100dp"
+                android:layout_below="@+id/usernickname1234"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="18dp"
+                android:layout_alignStart="@+id/usernickname1234">
+
+                <EditText
+                    android:id="@+id/aadhar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/usernickname1"
+                    android:layout_below="@+id/usernickname1"
+                    android:hint="Aadhar"
+                    android:enabled="false"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/usernickname1234"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="100dp"
+                android:layout_marginTop="21dp"
+                android:layout_below="@+id/usernickname12"
+                android:layout_alignStart="@+id/usernickname12">
+
+                <EditText
+                    android:id="@+id/photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/usernickname1"
+                    android:layout_below="@+id/usernickname1"
+                    android:hint="Photo"
+                    android:enabled="false"
+
+                    android:inputType="textEmailAddress"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/usernickname12345"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/usernickname123"
+
+                android:layout_marginTop="18dp"
+                android:layout_alignStart="@+id/usernickname123"
+                android:layout_toStartOf="@+id/panUpload">
+
+                <EditText
+                    android:id="@+id/pan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                android:hint="Pan"
+
+                    android:inputType="textEmailAddress"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/photoUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_above="@+id/usernickname123"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="11dp"
+                android:background="@drawable/button_background"
+
+                android:textColor="#FFFFFF"
+                android:text="Click" />
+
+            <Button
+                android:id="@+id/aadharUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignBottom="@+id/usernickname123"
+                android:layout_alignStart="@+id/photoUpload"
+                android:text="Upload"
+                android:textColor="#FFFFFF"
+
+                android:background="@drawable/button_background"
+                />
+
+            <Button
+                android:id="@+id/panUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Upload"
+                android:background="@drawable/button_background"
+
+                android:textColor="#FFFFFF"
+                android:layout_alignBottom="@+id/usernickname12345"
+                android:layout_alignStart="@+id/aadharUpload" />
+
+            <Button
+                android:id="@+id/submit2"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_background"
+                android:padding="10dp"
+                android:text="Submit"
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp"
+                android:layout_below="@+id/usernickname12345"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp" />
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:layout_width="wrap_content"
+                android:id="@+id/avl2"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                style="@style/AVLoadingIndicatorView.Large"
+                app:indicatorName="BallClipRotateIndicator"
+                app:indicatorColor="@android:color/holo_green_light"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

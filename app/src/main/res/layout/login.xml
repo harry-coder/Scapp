@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.example.harpreet.scrapper.Different_Forms.login">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/mobilewrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/input_background">
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:drawableRight="@drawable/mobile"
+                android:inputType="numberSigned"
+
+
+                />
+        </android.support.design.widget.TextInputLayout>
+    
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passwordwrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/mobilewrapper"
+        android:layout_alignStart="@+id/mobilewrapper"
+        android:layout_below="@+id/mobilewrapper"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/input_background">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:drawableRight="@drawable/password"
+            android:inputType="textPassword"
+
+            />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/button_background"
+        android:text="LOGIN"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_below="@+id/passwordwrapper"
+
+        android:layout_marginTop="40dp"
+        android:layout_alignStart="@+id/passwordwrapper"
+        android:layout_alignEnd="@+id/passwordwrapper" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+
+        >
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot"
+
+        android:layout_marginTop="17dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="5dp"
+
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="|"
+        android:textSize="20sp"
+        android:layout_marginTop="18dp"
+
+        android:layout_marginBottom="10dp"
+
+         />
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+
+         />
+    </LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_width="wrap_content"
+        android:id="@+id/avi1"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        style="@style/AVLoadingIndicatorView.Large"
+        app:indicatorName="BallClipRotateIndicator"
+        app:indicatorColor="@android:color/holo_green_light"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

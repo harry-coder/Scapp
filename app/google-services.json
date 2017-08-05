@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "821778084723",
+    "firebase_url": "https://scrapper-189c9.firebaseio.com",
+    "project_id": "scrapper-189c9",
+    "storage_bucket": "scrapper-189c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821778084723:android:78a26fed0a135e9a",
+        "android_client_info": {
+          "package_name": "com.example.harpreet.scrapper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821778084723-63jhdd35odceehb319uc6bdsoi2h7ulv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.harpreet.scrapper",
+            "certificate_hash": "cebd73bf2e096c73d304d794880029eb1a9351a4"
+          }
+        },
+        {
+          "client_id": "821778084723-3dmak6qosmn95feh7omtussl08cqjh5n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcT7sZq_cTsMSYJimd1WHHLxjDISkZmyU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "821778084723-3dmak6qosmn95feh7omtussl08cqjh5n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

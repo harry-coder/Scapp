@@ -1,0 +1,177 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relative"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:id="@+id/textInputLayout">
+
+        <EditText
+            android:id="@+id/item1_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:background="@drawable/input_background"
+            android:ems="10"
+            android:hapticFeedbackEnabled="true"
+            android:hint="Scrap Item 1 Weight"
+            android:layout_margin="20dp"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_centerHorizontal="true" />
+
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/textInputLayout2"
+        >
+        <EditText
+            android:id="@+id/item2_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="20dp"
+            android:background="@drawable/input_background"
+            android:ems="10"
+            android:hapticFeedbackEnabled="true"
+            android:hint="Scrap Item 2 Weight"
+
+            android:padding="15dp" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/textInputLayout3"
+
+        >
+
+        <EditText
+            android:id="@+id/item1_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="20dp"
+            android:background="@drawable/input_background"
+            android:ems="10"
+            android:hapticFeedbackEnabled="true"
+            android:hint="Scrap Item 1 Rate"
+            android:inputType="textPassword"
+            android:padding="15dp" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/textInputLayout4"
+
+        >
+
+        <EditText
+            android:id="@+id/item2_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="20dp"
+            android:background="@drawable/input_background"
+            android:ems="10"
+            android:hapticFeedbackEnabled="true"
+            android:hint="Scrap Item 1 Rate"
+            android:inputType="textPassword"
+            android:padding="15dp" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/textInputLayout5"
+
+        >
+
+        <EditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="20dp"
+            android:background="@drawable/input_background"
+            android:ems="10"
+            android:hapticFeedbackEnabled="true"
+            android:hint="Description"
+            android:inputType="textPassword"
+            android:padding="15dp" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/textInputLayout6"
+
+        >
+
+        <EditText
+            android:id="@+id/vehical_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="20dp"
+            android:background="@drawable/input_background"
+            android:ems="10"
+            android:hapticFeedbackEnabled="true"
+            android:hint="Vehical Number"
+
+            android:padding="15dp" />
+
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+</LinearLayout>

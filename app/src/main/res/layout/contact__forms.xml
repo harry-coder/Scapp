@@ -1,0 +1,140 @@
+<!--
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relative1"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+-->
+
+
+
+    <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fillViewport="true"
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative"
+            android:orientation="vertical"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+
+            >
+
+
+
+            <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="7dp"
+
+                app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/usernameWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginStart="70dp"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentEnd="true">
+
+                <EditText
+                    android:id="@+id/contact_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned"
+                    android:hint="Contact 1"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/usernickname1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="70dp"
+
+                android:layout_marginBottom="15dp"
+                android:layout_below="@+id/usernameWrapper"
+                android:layout_alignEnd="@+id/usernameWrapper"
+                android:layout_marginTop="22dp">
+
+                <EditText
+                    android:id="@+id/contact_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/usernickname1"
+                    android:layout_below="@+id/usernickname1"
+                    android:hint="Contact 2"
+                    android:inputType="numberSigned"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="29dp"
+                    android:text="Contact Details"
+                    android:textSize="20sp"
+                    android:textColor="#075e54"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="19dp" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/contact"
+                    android:layout_alignTop="@+id/usernameWrapper"
+                    android:layout_alignStart="@+id/textView2"
+                    android:layout_marginTop="11dp" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/contact"
+
+                    android:layout_alignBottom="@+id/usernickname1"
+                    android:layout_alignStart="@+id/imageView8"
+                    android:layout_marginBottom="12dp" />
+
+
+            </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <include layout="@layout/other_details"/>
+
+</LinearLayout>
+</ScrollView>

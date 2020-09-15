@@ -101,7 +101,9 @@ public class login extends Fragment {
 
     }
 
-
+public void initialCheckout(){
+    System.out.println ("Checkout" );
+}
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
